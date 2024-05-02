@@ -575,6 +575,32 @@ section {
   margin-bottom: 0;
 }
 
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Ajusta el ancho de las tarjetas para centrarlas */
+.col-lg-4 {
+  width: calc(33.33% - 30px); /* Tres columnas en una fila */
+  margin-right: 15px; /* Espacio entre las tarjetas */
+  margin-left: 15px; /* Espacio entre las tarjetas */
+}
+
+/* Centra las tarjetas en la página */
+.row {
+  justify-content: center;
+}
+
+/* Elimina el margen izquierdo y derecho de la primera y última tarjeta de cada fila */
+.col-lg-4:first-child {
+  margin-left: 0;
+}
+
+.col-lg-4:last-child {
+  margin-right: 0;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1161,115 +1187,10 @@ section {
   color: #1bbd36;
 }
 
+
 /*--------------------------------------------------------------
-# Pricing
+# Login
 --------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #847872;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #1bbd36;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #4d4643;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #1bbd36;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #1bbd36;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #2ae149;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #1bbd36;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #1bbd36;
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -2070,138 +1991,46 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #fff;
-  font-size: 14px;
   background: #111;
-}
-
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #1e1e1e;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h3 {
-  font-size: 22px;
-  margin: 0 0 10px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: #fff;
-}
-
-#footer .footer-top .footer-contact p {
   font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
 }
 
-#footer .footer-top h4 {
+#footer .footer-links h4 {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
   position: relative;
   padding-bottom: 12px;
+  margin-top: 10px;
 }
 
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
+#footer .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #1ed33c;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
+#footer .footer-links ul li {
   padding: 10px 0;
-  display: flex;
-  align-items: center;
+  display: inline-block;
 }
 
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
+#footer .footer-links ul a {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  margin-right: 20px; /* Aumenta o disminuye según sea necesario */
 }
 
-#footer .footer-top .footer-links ul a:hover {
+#footer .footer-links ul a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #1bbd36; /* Cambiar al color verde */
 }
 
-#footer .footer-newsletter {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px 0 0 4px;
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -4px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #1bbd36;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #2ae149;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #fff;
+#footer .social-links {
+  margin-top: 10px; /* Ajusta según sea necesario */
 }
 
 #footer .social-links a {
@@ -2210,17 +2039,15 @@ section {
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 8px 12px;
   margin-right: 4px;
   border-radius: 4px;
   text-align: center;
-  width: 36px;
-  height: 36px;
   transition: 0.3s;
 }
 
 #footer .social-links a:hover {
-  background: #1bbd36;
+  background: #1bbd36; /* Cambiar al color verde */
   color: #fff;
   text-decoration: none;
 }
