@@ -7,9 +7,10 @@ import { MovilesComponent } from './componentes/catalogo/moviles/moviles.compone
 import { RelojesComponent } from './componentes/catalogo/relojes/relojes.component';
 import { GafasComponent } from './componentes/catalogo/gafas/gafas.component';
 import { ImpresoraComponent } from './componentes/catalogo/impresora/impresora.component';
-import { CarritoComponent } from './componentes/carrito/carrito.component';
-import { LoginComponent } from './componentes/login/login.component';
+
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { CarritoComponent } from './componentes/carrito/carrito.component';
 
 // Importa otros componentes necesarios
 
@@ -26,7 +27,7 @@ export const routes: Routes = [
   { path: 'impresora', component: ImpresoraComponent },
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'registro', component: RegistroComponent },
+  { path: 'registro', component: RegistroComponent }
 
   // Agrega las otras rutas y componentes necesarios
 ];

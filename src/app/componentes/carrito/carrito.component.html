@@ -1,24 +1,77 @@
 <app-nabvar></app-nabvar>
+<br><br><br><br><br><br><br><br><br><br>
+<h1>PÁGINA DE PAGOS</h1>
 
-<form class="formulario">
-    <h1>INICIAR SESIÓN</h1>
-    <div class="contenedor">
+<!-- Tabla de Productos -->
+<table>
+    <thead>
+    <tr>
+        <th>Número de Producto</th>
+        <th>Nombre del Producto</th>
+        <th>Cantidad</th>
+        <th>Precio Unitario</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Gafas VR UltraVision</td>
+        <td>2</td>
+        <td>499.99€</td>
+        <td>999.98€</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Móvil UltraTech </td>
+        <td>1</td>
+        <td>999.99€</td>
+        <td>999.99€</td>
+    </tr>
+    <!-- Agrega más filas según sea necesario -->
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">Precio Final</td>
+        <td>1999.97€</td>
+    </tr>
+    </tfoot>
+</table>
+
+<!-- Opciones de Pago -->
 
 
+<!-- Formulario de Tarjeta -->
+<div class="card-form">
 
-        <div class="input-contenedor">
-            <i class="fas fa-envelope icon"></i>
-            <input type="text" placeholder="Correo Electronico o Nombre de Usuario">
-
+    <form action="/procesar_pago" method="post">
+        <div class="payment-options">
+            <h2>Selecciona un Método de Pago</h2>
+            <label><input type="radio" name="payment" value="visa"> Visa</label>
+            <label><input type="radio" name="payment" value="mastercard"> Mastercard</label>
+            <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+            <label><input type="radio" name="payment" value="other"> Otro</label>
+        </div>
+        <h2>Ingresa los Datos de la Tarjeta</h2>
+        <div class="form-group">
+            <label for="cuenta">Cuenta Bancaria:</label>
+            <input type="text" id="cuenta" name="cuenta" placeholder="Ingrese su número de cuenta" required>
         </div>
 
-        <div class="input-contenedor">
-            <i class="fas fa-key icon"></i>
-            <input type="password" placeholder="Contraseña">
-
+        <div class="form-group">
+            <label for="vencimiento">Fecha de Vencimiento:</label>
+            <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
         </div>
-        <input type="submit" value="INICIAR SESIÓN" class="button">
 
-        <p>¿No tienes una cuenta? <a class="link" href="registro.html">Registrate </a></p>
-    </div>
-</form>
+        <div class="form-group">
+            <label for="codigo">Código de Seguridad:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Ingrese el código de seguridad" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Finalizar Pago</button>
+
+
+    </form>
+
+
