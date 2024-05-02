@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NabvarComponent } from '../nabvar/nabvar.component';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-registro',
   standalone: true,
   imports: [NabvarComponent],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  templateUrl: './registro.component.html',
+  styleUrl: './registro.component.css'
 })
-export class LoginComponent {
+export class RegistroComponent {
 
 }

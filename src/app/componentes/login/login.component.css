@@ -1,0 +1,75 @@
+/* Estilos para el formulario de inicio de sesión */
+.login-formulario {
+    
+    background-size: cover;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el título del formulario */
+  .login-titulo {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333333;
+    font-size: 40px;
+  }
+  
+  /* Estilos para los contenedores del formulario */
+  .login-contenedor {
+    width: 100%;
+  }
+  
+  /* Estilos para los campos de entrada del formulario */
+  .login-input-text,
+  .login-input-password {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+  }
+  
+  /* Estilos para los iconos del formulario */
+  .login-icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .login-button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #333333;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón de inicio de sesión cuando se pasa el mouse o se presiona */
+  .login-button:hover,
+  .login-button:active {
+    background: rgba(0, 128, 0, 0.87);
+  }
+  
+  /* Estilos para el mensaje de registro del formulario */
+  .login-mensaje {
+    text-align: center;
+  }
+  
+  /* Estilos para el enlace de registro del formulario */
+  .login-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+  }
+  
+  .login-link:hover {
+    color: rgba(234, 181, 27, 0.87);
+  }
