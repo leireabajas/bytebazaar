@@ -26,7 +26,7 @@ export const routes: Routes = [
   { path: 'impresora', component: ImpresoraComponent },
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'registro', component: RegistroComponent }
+  { path: 'registro', component: RegistroComponent },
 
   // Agrega las otras rutas y componentes necesarios
 ];
