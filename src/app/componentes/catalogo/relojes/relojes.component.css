@@ -6,7 +6,6 @@
 
 .columna-izquierda {
     width: 40%;
-
 }
 
 .columna-izquierda .especificaciones {
@@ -19,23 +18,20 @@
     flex: 1;
 }
 
-/*  imagen del producto */
-.columna-izquierda img {
-    width: 700px;
+.producto1 {
+    width: 80%;
+    height: auto;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: 100%;
+    max-height: 100%;
 }
 
-/*  selectores de color y capacidad */
 .columna-izquierda select {
     margin-top: 10px;
     padding: 8px;
 }
 
-/* Estilo para el título, descripción y precio del producto */
 .columna-derecha h2,
 .columna-derecha p,
 .columna-derecha .precio {
@@ -47,30 +43,27 @@
     color: rgb(0, 0, 0);
 }
 
-/* Estilo para los botones "Agregar al Carrito" y "Comprar Ahora" */
 .add-to-cart,
 .buy-now-button {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
     text-decoration: none;
-    color: #000000;
-    background-color: rgba(234, 181, 27, 0.87);
+    color: #ffffff;
+    background-color: #333333;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .add-to-cart:hover,
 .buy-now-button:hover {
-    background-color: #333; /* Cambia el color al pasar el mouse */
+    background-color: #1bbd36;
 }
 
-/* Estilo para el contenido adicional sobre el producto */
 .content-container {
     margin: 20px;
 }
 
-/* secciones de características y opiniones */
 .content-container section {
     margin-bottom: 30px;
 }
@@ -80,7 +73,6 @@
     color: #333;
 }
 
-/*  listas de características */
 .content-container ul {
     list-style-type: disc;
     margin-left: 20px;
