@@ -1479,7 +1479,17 @@ section {
     transform: rotate(360deg);
   }
 }
+.contact .info-wrap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Ajusta el radio del borde para hacerlo más estético */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Reducir la sombra para un aspecto más sutil */
+  transition: all 0.3s; /* Agregar transición para cambios suaves */
+}
 
+.contact .info-wrap img:hover {
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el cursor para un efecto de zoom */
+}
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
