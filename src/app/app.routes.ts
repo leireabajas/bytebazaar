@@ -12,6 +12,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './componentes/carrito/carrito.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component';
+import { CatalogooComponent } from './componentes/catalogo/catalogoo/catalogoo.component';
 
 
 // Importa otros componentes necesarios
@@ -28,6 +29,7 @@ export const routes: Routes = [
   { path: 'relojes', component: RelojesComponent },
   { path: 'gafas', component: GafasComponent },
   { path: 'impresora', component: ImpresoraComponent },
+  { path: 'catalogo', component: CatalogooComponent },
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent }
