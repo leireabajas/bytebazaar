@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
+
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { MovilesComponent } from './componentes/catalogo/moviles/moviles.component';
@@ -13,6 +13,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './componentes/carrito/carrito.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component';
 
+
 // Importa otros componentes necesarios
 
 export const routes: Routes = [
@@ -20,7 +21,6 @@ export const routes: Routes = [
   
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component:HomeComponent },
-  { path: 'catalogo', component: CatalogoComponent },
 
   { path: 'notfound', component: NotFoundComponent },
   { path: 'contacto', component: ContactoComponent },
