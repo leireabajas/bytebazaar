@@ -9,5 +9,9 @@ import { NabvarComponent } from '../nabvar/nabvar.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  comprarProducto() {
+    console.log('Producto comprado');
+    // Aquí puedes agregar la lógica para comprar el producto
+  }
 
 }

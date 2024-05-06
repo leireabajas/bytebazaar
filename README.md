@@ -2,7 +2,7 @@
 
 ## REVISIÓN MAQUETACIÓN
 
-1. El Home no me queda mis claro cual sería la estructura final que va a tener. Tengan en cuenta que es importante la mayor parte del diseño hacerla con bootstrap. Recuerden que el objetivo de la maquetación es mostrarle una "visualizar como sería el producto final"
+1. El Home no me queda mis claro cual sería la estructura final que va a tener. Tengan en cuenta que es importante la mayor parte del diseño hacerla con bootstrap. Recuerden que el objetivo de la maquetación es mostrarle una "visualizar como sería el producto final".
 2. En el link de catálogo, los links va a una página de 1 producto. Ya que van a usar esa estructura, cada uno de esos links debe ir a un componente que tenga un catalogo de esa categoria (ej. varios modelos de rolojes, y al hacer click en uno vaya a la página de producto de ese reloj)
 3. las páginas de productos, está un poco falto de diseño. muy plana. Recuerden que el objetivo de esta páginas, al igual que las otras es incitar al cliente a comprar.
 4. los elementos de la página de pago estan muy pegados los unos con los otros y el color gris para una página de tecnología no sería el ideal
