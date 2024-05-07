@@ -32,7 +32,9 @@ export const routes: Routes = [
   { path: 'catalogo', component: CatalogooComponent },
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'registro', component: RegistroComponent }
+  { path: 'registro', component: RegistroComponent },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' } 
 
   // Agrega las otras rutas y componentes necesarios
 ];
