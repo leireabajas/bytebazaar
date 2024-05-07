@@ -1,72 +1,94 @@
 <app-nabvar></app-nabvar>
-<br><br><br><br>
+<br><br><br><br><br>
 
-<body>
-    <div class="container">
-        <div class="content">
-
-            <!-- Tabla de Productos -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Número de Producto</th>
-                        <th>Nombre del Producto</th>
-                        <th>Cantidad</th>
-                        <th>Precio Unitario</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Gafas VR UltraVision</td>
-                        <td>2</td>
-                        <td>499.99€</td>
-                        <td>999.98€</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Móvil UltraTech </td>
-                        <td>1</td>
-                        <td>999.99€</td>
-                        <td>999.99€</td>
-                    </tr>
-                    <!-- Agrega más filas según sea necesario -->
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Precio Final</td>
-                        <td>1999.97€</td>
-                    </tr>
-                </tfoot>
-            </table>
-
-            <!-- Formulario de Tarjeta -->
-            <div class="card-form">
-                <form action="/procesar_pago" method="post">
-                    <div class="payment-options">
-                        <h2>Selecciona un Método de Pago</h2>
-                        <label><input type="radio" name="payment" value="visa"> Visa</label>
-                        <label><input type="radio" name="payment" value="mastercard"> Mastercard</label>
-                        <label><input type="radio" name="payment" value="paypal"> PayPal</label>
-                        <label><input type="radio" name="payment" value="other"> Otro</label>
-                    </div>
-                    <h2>Ingresa los Datos de la Tarjeta</h2>
-                    <div class="form-group">
-                        <label for="cuenta">Cuenta Bancaria:</label>
-                        <input type="text" id="cuenta" name="cuenta" placeholder="Ingrese su número de cuenta" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="vencimiento">Fecha de Vencimiento:</label>
-                        <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="codigo">Código de Seguridad:</label>
-                        <input type="text" id="codigo" name="codigo" placeholder="Ingrese el código de seguridad" required>
-                    </div>
-                    <button type="submit" class="btn-submit">Finalizar Pago</button>
-                </form>
+    <div class="container mt-5">
+      
+        <table class="table  table-bordered-">
+            <thead>
+              <tr>
+                <th>Número de producto</th>
+                <th>Nombre del producto</th>
+                <th>Cantidad</th>
+                <th>Precio por unidad</th>
+                <th>Precio final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Producto 1</td>
+                <td>2</td>
+                <td>$10.00</td>
+                <td>$20.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Producto 2</td>
+                <td>1</td>
+                <td>$15.00</td>
+                <td>$15.00</td>
+              </tr>
+              <!-- Agrega más filas según sea necesario -->
+            </tbody>
+          </table>
+  
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h2>Selecciona el método de pago:</h2>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaCredito" value="tarjetaCredito" checked>
+                <label class="form-check-label" for="tarjetaCredito">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaDebito" value="tarjetaDebito">
+                <label class="form-check-label" for="tarjetaDebito">
+                  Tarjeta de Débito
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPago" id="paypal" value="paypal">
+                <label class="form-check-label" for="paypal">
+                  PayPal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPago" id="transferencia" value="transferencia">
+                <label class="form-check-label" for="transferencia">
+                  Transferencia Bancaria
+                </label>
+              </div>
             </div>
+      
+            <div class="card mt-4">
+              <div class="card-body">
+                <h2 class="card-title">Datos de la Tarjeta</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="cuentaBancaria">Número de cuenta bancaria:</label>
+                    <input type="text" class="form-control" id="cuentaBancaria" placeholder="Ingresa tu número de cuenta">
+                  </div>
+                  <div class="form-group">
+                    <label for="fechaVencimiento">Fecha de vencimiento:</label>
+                    <input type="text" class="form-control" id="fechaVencimiento" placeholder="MM/AA">
+                  </div>
+                  <div class="form-group">
+                    <label for="codigoSeguridad">Código de seguridad:</label>
+                    <input type="text" class="form-control" id="codigoSeguridad" placeholder="CVC">
+                  </div><br>
+                  <button type="submit" class="btn btn-success">Finalizar Pago</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- Bootstrap JS y dependencias -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
-</body>
+   

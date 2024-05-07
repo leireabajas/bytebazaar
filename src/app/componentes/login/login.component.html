@@ -1,21 +1,30 @@
 <app-nabvar></app-nabvar>
 
-
+<br><br><br><br><br>
 <body>
-  <form class="formulario">
-      <h1>INICIAR SESIÓN</h1>
-      <div class="contenedor">
-          <div class="input-contenedor">
-              <i class="fas fa-envelope icon"></i>
-              <input type="text" placeholder="Correo Electronico o Nombre de Usuario">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="formulario">
+            <h1>INICIAR SESIÓN</h1>
+            <div class="contenedor">
+              <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" class="form-control" placeholder="Correo Electronico o Nombre de Usuario">
+              </div>
+              <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <input type="submit" value="INICIAR SESIÓN" class="btn btn-primary button">
+              <p>¿No tienes una cuenta? <a href="/registro" class="link">Registrarse</a></p>
+            </div>
           </div>
-          <div class="input-contenedor">
-              <i class="fas fa-key icon"></i>
-              <input type="password" placeholder="Contraseña">
-          </div>
-          <input type="submit" value="INICIAR SESIÓN" class="button">
-          <p>¿No tienes una cuenta? <a href="/registro">Registrarse</a></p>
+        </div>
       </div>
-  </form>
+    </div>
   
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
