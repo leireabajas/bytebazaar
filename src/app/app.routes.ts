@@ -29,7 +29,7 @@ export const routes: Routes = [
   { path: 'relojes', component: RelojesComponent },
   { path: 'gafas', component: GafasComponent },
   { path: 'impresora', component: ImpresoraComponent },
-  { path: 'catalogo', component: CatalogooComponent },
+ 
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
