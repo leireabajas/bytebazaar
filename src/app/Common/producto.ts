@@ -1,9 +1,10 @@
 export interface Producto {
 
-    productos: Producto[]
+  productos: Producto[]
 }
 
 export interface Producto {
+  id: number
   nombre: string
   imagen: string
   precio: number

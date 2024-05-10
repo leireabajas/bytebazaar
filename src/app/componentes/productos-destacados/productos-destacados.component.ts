@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../data/data.service';
 import { Producto } from '../../Common/producto';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-productos-destacados',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './productos-destacados.component.html',
   styleUrl: './productos-destacados.component.css'
 })

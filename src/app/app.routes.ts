@@ -13,6 +13,9 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './componentes/carrito/carrito.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component';
 import { CommonModule } from '@angular/common';
+import { RickyMortyComponent } from './componentes/ricky-morty/ricky-morty.component';
+import { PersonajeONEComponent } from './componentes/personaje-one/personaje-one.component';
+
 
 // Importa otros componentes necesarios
 
@@ -25,6 +28,9 @@ export const routes: Routes = [
   { path: 'relojes', component: RelojesComponent },
   { path: 'gafas', component: GafasComponent },
   { path: 'impresora', component: ImpresoraComponent },
+  {path: 'personajeRyM', component: RickyMortyComponent},
+  {path: 'personajeONE/:parametro', component: PersonajeONEComponent},
+  
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },

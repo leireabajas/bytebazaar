@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-nabvar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,],
   templateUrl: './nabvar.component.html',
   styleUrl: './nabvar.component.css'
 })
