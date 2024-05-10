@@ -1,0 +1,31 @@
+
+
+<section id="productos-relacionados" class="productos-relacionados">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Productos Destacados</h2>
+        
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- Producto 1 -->
+        @for(tarjeta of producto.productos; track tarjeta){
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="producto d-flex flex-column align-items-center justify-content-center">
+                <img src="{{tarjeta.imagen}}" class="img-fluid producto-img" alt="{{tarjeta.nombre}}">
+                <br><h3 class="text-center">{{tarjeta.nombre}}</h3>
+                <p class="precio text-center">{{"$" + tarjeta.precio}}</p>
+                <div class="d-flex justify-content-center flex-column align-items-center w-100">
+                  <a href="" class="ver-mas mb-2">Ver más</a>
+                  <a href="" class="btn btn-success btn-sm">Comprar Ahora</a>
+                </div>
+              </div>
+            </div>
+          }
+      
+        
+
+        
+      
+      
+ 

@@ -12,35 +12,29 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './componentes/carrito/carrito.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component';
-import { CatalogooComponent } from './componentes/catalogo/catalogoo/catalogoo.component';
-
+import { CommonModule } from '@angular/common';
 
 // Importa otros componentes necesarios
 
 export const routes: Routes = [
-  
-  
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component:HomeComponent },
-
+  { path: 'home', component: HomeComponent },
   { path: 'notfound', component: NotFoundComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'moviles', component: MovilesComponent },
   { path: 'relojes', component: RelojesComponent },
   { path: 'gafas', component: GafasComponent },
   { path: 'impresora', component: ImpresoraComponent },
- 
   { path: 'carrito', component: CarritoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
   { path: '404', component: NotFoundComponent },
   { path: '**', redirectTo: '/404' } 
-
   // Agrega las otras rutas y componentes necesarios
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes), CommonModule],
+  exports: [RouterModule] // Solo necesitas exportar RouterModule
 })
 export class AppRoutingModule { }

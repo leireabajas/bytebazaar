@@ -1,0 +1,5 @@
+.producto-img {
+    height: 200px; /* Ajusta la altura según tus preferencias */
+    width: auto; /* Para mantener la proporción de aspecto */
+    object-fit: cover; /* Para que la imagen cubra completamente el contenedor */
+  }
