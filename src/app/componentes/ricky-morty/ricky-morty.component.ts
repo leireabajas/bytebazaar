@@ -18,7 +18,31 @@ export class RickyMortyComponent implements OnInit{
 
   ngOnInit(): void {
     this.loadPersonajesRyM();
+
+   
   }
+
+  
+  generarNumeroAleatorio(): void {
+    const randomNumber = Math.floor(Math.random() * 826) + 1;
+    let descuento = 0;
+
+    if (randomNumber >= 1 && randomNumber <= 300) {
+        descuento = 5;
+    } else if (randomNumber >= 301 && randomNumber <= 401) {
+        descuento = 10;
+    } else if (randomNumber >= 402 && randomNumber <= 600) {
+        descuento = 15;
+    } else if (randomNumber >= 601 && randomNumber <= 750) {
+        descuento = 20;
+    } else {
+        descuento = 25;
+    }
+
+    alert('Te ha tocado esta tarjeta: ' + randomNumber + ', obtienes un ' + descuento + '% de descuento');
+  }
+
+
   loadPersonajesRyM(){
     this.apiService.getPersonajesRyM().subscribe(
       {
@@ -54,6 +78,8 @@ export class RickyMortyComponent implements OnInit{
   }
   
   
+
+ 
 
 
 
