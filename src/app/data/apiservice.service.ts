@@ -5,7 +5,6 @@ import { Observable } from 'rxjs';
 import { Rickymorty } from '../Common/rickymorty';
 import { PersonajeONE } from '../Common/personaje-one';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,14 +14,15 @@ export class APIServiceService {
   
   private urlAPI = 'https://rickandmortyapi.com/api/character/';
   
-  getPersonajesRyM(): Observable<Rickymorty>{
-    return this.http.get<Rickymorty>(this.urlAPI)
-  }
-  public getPersonajeONE(id: number): Observable<PersonajeONE> {
-    return this.http.get<PersonajeONE>(this.urlAPI + id);
+  getPersonajesRyM(): Observable<Rickymorty> {
+    return this.http.get<Rickymorty>(this.urlAPI);
   }
 
-   public getPage(page:string): Observable<Rickymorty>{
-    return this.http.get<Rickymorty>(page)
-   }
+  public getPersonajeONE(id: number): Observable<PersonajeONE> {
+    return this.http.get<PersonajeONE>(`${this.urlAPI}${id}`);
+  }
+
+  public getPage(page: string): Observable<Rickymorty> {
+    return this.http.get<Rickymorty>(page);
+  }
 }

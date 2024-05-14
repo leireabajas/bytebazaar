@@ -23,14 +23,14 @@ export class RickyMortyComponent implements OnInit{
     this.apiService.getPersonajesRyM().subscribe(
       {
         next: (data) =>{
-          console.log(data)
+          
           this.personajesRyM = data
         },
         error: err => {
-          console.log(err)
+         
         },
         complete: () =>{
-          console.log('completado')
+          
         }
       }
     )
@@ -41,13 +41,13 @@ export class RickyMortyComponent implements OnInit{
       {
         next:(data) =>{
           this.personajesRyM = data;
-          console.log(data)
+          
         },
         error: err => {
-          console.log(err)
+          
         },
         complete: () =>{
-          console.log('completado')
+        
         }
       }
     )

@@ -13,14 +13,14 @@ export interface Rickymorty {
     origin: Origin;
     location: Origin;
     image: string;
-    episode: string[];
-    url: string;
+    oferta: Number;
+    
     created: string;
   }
   
   export interface Origin {
     name: string;
-    url: string;
+   
   }
   
   export interface Info {

@@ -23,15 +23,15 @@ export class ProductosDestacadosComponent implements OnInit{
     this.dataService.getProductosDestacados().subscribe(
     {
       next: (data) =>{
-        console.log(data)
+       
         this.producto = data
         
       },
       error: err => {
-        console.log(err)
+        
       },
       complete: () => {
-        console.log('completado') 
+        
       }
     }
     )
