@@ -1,5 +1,5 @@
 <app-nabvar></app-nabvar>
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 <div class="content-fluid">
   <div class="row justify-content-center">
     <div class="col-12">
@@ -34,12 +34,24 @@
       <h3>Una tarjeta valida por cada compra</h3><br><br>
     </div>
   </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <button class="btn btn-success" (click)="generarNumeroAleatorio()">Generar Número</button>
+    </div>
+  </div>
+  <p id="result"></p>
+
+<br><br>
+
   <div class="row justify-content-center">
     @for (personaje of personajesRyM.results; track personaje) {
       <div class="col-12 col-sm-6 col-md-4 col-lg-4"> 
         <div class="card mb-3">
           <div class="row no-gutters">
             <div class="col-md-4 d-flex align-items-center">
+
+              
               <img
                 src="{{ personaje.image }}"
                 class="card-img"
@@ -56,6 +68,7 @@
                   <li class="list-group-item"><strong>Origin:</strong> {{ personaje.origin.name }}</li>
                   <li class="list-group-item"><strong>Species:</strong> {{ personaje.species }}</li>
                   <li class="list-group-item"><strong>Status:</strong> {{ personaje.status }}</li>
+                  <li class="list-group-item"><strong>Status:</strong> {{ personaje.oferta }}</li>
                 </ul>
               </div>
             </div>

@@ -15,6 +15,7 @@ export interface Rickymorty {
     image: string;
     oferta: Number;
     
+    
     created: string;
   }
   
