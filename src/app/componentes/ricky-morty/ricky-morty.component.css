@@ -1,6 +1,7 @@
 .card:hover{
     cursor: pointer;
     border:solid;
+
 }
 
 .card-body {
