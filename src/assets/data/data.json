@@ -22,7 +22,7 @@
           "imagen": "assets/img/relojes/relojes (3).jpg",
           "precio": 449,
           "ver_mas": "/relojes",
-          "boton_comprar": "Comprar Ahora"
+          "boton_comprar": "/carrito"
       },
       {
           "id": 4,
@@ -30,7 +30,7 @@
           "imagen": "assets/img/Moviles/movil5.1.jpeg",
           "precio": 1999,
           "ver_mas": "/moviles",
-          "boton_comprar": "Comprar Ahora"
+          "boton_comprar": "/carrito"
       }
   ]
 }
