@@ -6,10 +6,10 @@ export interface PersonajeONE {
   type: string;
   gender: string;
   origin: Origin;
-  location: Origin;
+ 
   image: string;
   episode: string[];
-  url: string;
+ 
   created: string;
 }
 
