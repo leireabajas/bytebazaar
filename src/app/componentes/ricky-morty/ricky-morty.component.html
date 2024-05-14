@@ -3,13 +3,7 @@
 
 <div class="content-fluid">
   <div class="row justify-content-center">
-    <div class="col-12">
-      <h2>Data Rick y Morty</h2>
-      <h3>{{ personajesRyM.info.count }}</h3>
-      <h3>{{ personajesRyM.info.next }}</h3>
-      <h3>{{ personajesRyM.info.pages }}</h3>
-      <h3>{{ personajesRyM.info.prev }}</h3>
-    </div>
+  
     <!-- Paginación superior con botones verdes -->
     <div class="col-12 text-center">
       <button class="btn btn-success mx-3 my-3 p-2" (click)="CambiaPagina('Anterior')">Anterior</button>
@@ -40,47 +34,37 @@
   </div>
 
 
-  <div class="row justify-content-center">
-    <div class="col-12 text-center">
-      <button class="btn btn-success" (click)="generarNumeroAleatorio()">Generar Número</button>
-    </div>
-  </div>
-  <p id="result"></p>
+
 
 <br><br>
 
-  
-
-  <div class="row justify-content-space-around">
-    @for (personaje of personajesRyM.results; track personaje) {
-    <div class="col-3">
-      <div
-        class="card"
-        style="width: 18rem"
-        [routerLink]="'/personajeONE/' + personaje.id"
-      >
-        <img
-          src="{{ personaje.image }}"
-          class="card-img-top"
-          alt="..."
-          width="200px"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ personaje.name }}</h5>
-          <p class="card-text">{{ personaje.id }}</p>
-
+<div class="row justify-content-center">
+  @for (personaje of personajesRyM.results; track personaje) {
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4"> 
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex align-items-center">
+            <img
+              src="{{ personaje.image }}"
+              class="card-img"
+              alt="..."
+              style="width: 100%; height: auto; max-height: 300px; margin-top: auto; margin-bottom: auto;"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body"> 
+              <h5 class="card-title">{{ personaje.name }}</h5>
+              <p class="card-text">{{ personaje.id }}</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Gender:</strong> {{ personaje.gender }}</li>
+                <li class="list-group-item"><strong>Origin:</strong> {{ personaje.origin.name }}</li>
+                <li class="list-group-item"><strong>Species:</strong> {{ personaje.species }}</li>
+                <li class="list-group-item"><strong>Status:</strong> {{ personaje.status }}</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">{{ personaje.gender }}</li>
-          <li class="list-group-item">{{ personaje.created }}</li>
-          <li class="list-group-item">{{ personaje.location.name }}</li>
-          <li class="list-group-item">{{ personaje.origin.name }}</li>
-          <li class="list-group-item">{{ personaje.species }}</li>
-          <li class="list-group-item">{{ personaje.status }}</li>
-          <li class="list-group-item">{{ personaje.type }}</li>
-        </ul>
       </div>
     </div>
-    }
-  </div>
+  }
 </div>
