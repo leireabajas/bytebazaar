@@ -1144,6 +1144,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
 .contact .info-wrap {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -1282,6 +1286,7 @@ section {
     transform: rotate(360deg);
   }
 }
+
 .contact .info-wrap img {
   max-width: 100%;
   height: auto;
