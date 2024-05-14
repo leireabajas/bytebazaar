@@ -14,7 +14,7 @@
           "imagen": "assets/img/gafas/gafas (2).jpg",
           "precio": 449,
           "ver_mas": "/gafas",
-          "boton_comprar": "Comprar Ahora"
+          "boton_comprar": "/carrito"
       },
       {
           "id": 3,
