@@ -1,12 +1,9 @@
 <app-nabvar></app-nabvar>
 
+<section id="hero" style="height: 600px;"> <!-- Ajusta la altura como desees -->
+  <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-
-
-<section id="hero" style="height: 600px;">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
 
       <!-- Slide 1 -->
       <div class="carousel-item active" style="background-image: url(assets/img/slide/gafas5.1.jpg); height: 100%;">
@@ -14,7 +11,7 @@
           <div class="carousel-content animate__animated animate__fadeInUp">
             <h2>Bienvenido a <span>Bytebazaar</span></h2>
             <p>Bienvenido a Bytebazaar, tu destino para tecnología innovadora. Descubre una amplia gama de productos, desde gafas VR y móviles de última generación hasta impresoras 3D y relojes táctiles. En Bytebazaar, nos dedicamos a ofrecerte lo mejor en tecnología para satisfacer todas tus necesidades digitales. ¡Explora nuestro catálogo y haz realidad tus sueños tecnológicos!</p>
-            <div class="text-center"><a href="/gafas" class="btn-get-started">Ver mas</a></div>
+            <div class="text-center"><a href="/gafas" class="btn-get-started">Leer mas</a></div>
           </div>
         </div>
       </div>
@@ -25,24 +22,21 @@
           <div class="carousel-content animate__animated animate__fadeInUp">
             <h2>Bienvenido a <span>Bytebazaar</span></h2>
             <p>Bienvenido a Bytebazaar, tu destino para tecnología innovadora. Descubre una amplia gama de productos, desde gafas VR y móviles de última generación hasta impresoras 3D y relojes táctiles. En Bytebazaar, nos dedicamos a ofrecerte lo mejor en tecnología para satisfacer todas tus necesidades digitales. ¡Explora nuestro catálogo y haz realidad tus sueños tecnológicos!</p>
-            <div class="text-center"><a href="/impresora" class="btn-get-started">Ver mas</a></div>
+            <div class="text-center"><a href="/impresora" class="btn-get-started">Leer mas</a></div>
           </div>
         </div>
       </div>
 
-
-      <!-- Slide 3 -->
       <!-- Slide 3 -->
       <div class="carousel-item" style="background-image: url(assets/img/slide/movHome3.jpg); height: 100%;">
         <div class="carousel-container">
           <div class="carousel-content animate__animated animate__fadeInUp">
             <h2>Bienvenido a <span>Bytebazaar</span></h2>
             <p>Bienvenido a Bytebazaar, tu destino para tecnología innovadora. Descubre una amplia gama de productos, desde gafas VR y móviles de última generación hasta impresoras 3D y relojes táctiles. En Bytebazaar, nos dedicamos a ofrecerte lo mejor en tecnología para satisfacer todas tus necesidades digitales. ¡Explora nuestro catálogo y haz realidad tus sueños tecnológicos!</p>
-            <div class="text-center"><a href="/moviles" class="btn-get-started">Ver mas</a></div>
+            <div class="text-center"><a href="/moviles" class="btn-get-started">Leer mas</a></div>
           </div>
         </div>
       </div>
-
 
       <!-- Slide 4 -->
       <div class="carousel-item" style="background-image: url(assets/img/slide/relojesHome4.jpg); height: 100%;">
@@ -50,28 +44,28 @@
           <div class="carousel-content animate__animated animate__fadeInUp">
             <h2>Bienvenido a <span>Bytebazaar</span></h2>
             <p>Bienvenido a Bytebazaar, tu destino para tecnología innovadora. Descubre una amplia gama de productos, desde gafas VR y móviles de última generación hasta impresoras 3D y relojes táctiles. En Bytebazaar, nos dedicamos a ofrecerte lo mejor en tecnología para satisfacer todas tus necesidades digitales. ¡Explora nuestro catálogo y haz realidad tus sueños tecnológicos!</p>
-            <div class="text-center"><a href="/relojes" class="btn-get-started">Ver mas</a></div>
+            <div class="text-center"><a href="/relojes" class="btn-get-started">Leer mas</a></div>
           </div>
         </div>
       </div>
 
-
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
   </div>
 </section>
 
-  <!-- End Hero -->
 
+  <!-- End Hero -->
     <!-- ======= About Us Section ======= -->
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
@@ -104,4 +98,5 @@
   
       </div>
     </section><!-- End About Us Section -->
- <app-productos-destacados></app-productos-destacados>
+
+    <app-productos-destacados></app-productos-destacados>
